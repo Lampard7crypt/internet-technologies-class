@@ -32,8 +32,8 @@ p {
 }
 
 .navbar {
-  position: sticky; 
-  top: 0; 
+  position: sticky;
+  top: 0;
   z-index: 100;
   width: 100%;
 }
@@ -77,14 +77,14 @@ nav li a[aria-current="page"] {
 }
 
 body {
-  background-image: url('joker.jpg');
+  background-image: url('light_mode_image.jpg');
   background-size: cover;
   background-attachment: fixed;
 }
 
 /* Dark Mode Styles */
 body.dark-mode {
-  background-image: url('joker_jpeg.jpg');
+  background-image: url('dark_mode_image.jpg');
   background-color: #121212;
   color: #e0e0e0;
 }
@@ -113,38 +113,41 @@ form {
   max-width: 600px;
   margin: 2rem auto;
   padding: 20px;
-  display: grid; 
+  display: grid;
   gap: 1rem;
 }
 
-form[input]{
+form[input] {
   display: block;
   color: blue;
 }
 
-fieldset{
-  legend{
+fieldset {
+  legend {
     font-weight: bold;
   }
+
   label {
-    text-align: right; width: 75px;
+    text-align: right;
+    width: 75px;
   }
 }
 
 input,
 textarea {
-    padding: 0.75rem 1rem;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    background: var(--surface);
-    color: var(--text);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    font-size: 16px;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 16px;
 }
 
 /* The "Active" feel */
 input:focus {
-  border-color: #3b82f6; /* A nice blue */
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); /* Subtle glow */
+  border-color: #3b82f6;
+  /* A nice blue */
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  /* Subtle glow */
 }
-
