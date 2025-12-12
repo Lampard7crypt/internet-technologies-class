@@ -19,29 +19,67 @@
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li style="float:right"><button id="darkModeToggle"
-                    style="padding: 14px 16px; background: none; border: none; color: white; cursor: pointer; font-family: inherit; font-size: inherit;">🌙
-                    Dark Mode</button></li>
+                    style="padding: 14px 16px; background: none; border: none; color: white; cursor: pointer; font-family: inherit; font-size: inherit;">🌙 Dark Mode</button></li>
         </ul>
     </nav>
     <h1>Lampard's Site</h1>
-    <p>
-        <span id="greeting">Hello there</span> 👋<br> My name is Lampard Kipyegon, I am a first year student at JKUAT
-        university.
+    <p class="p1">
+        <span id="greeting">Hello there</span> 👋<br> 
+        Welcome to my personal corner of the internet. My name is Lampard Kipyegon, a first-year Computer Science student at JKUAT, passionate about building things that make life a little smarter, smoother, and (occasionally) cooler.
+        I created this site to document my journey, experiment with web development, and showcase some of the projects and ideas I'm currently exploring.
     </p>
-    <p>Button: </p> <button onClick="greetings()">Greetings</button>
-    <p>Button: </p> <button onClick="counter()">Counter</button>
-    <h2>Biography</h2>
-    <p id="text">This is a brief bio of Lampard</p>
-    <ol>
-        <li>This is number 1 hehe</li>
-        <li>This is number 2</li>
-    </ol>
-    <ul>
-        <li>First item</li>
-        <li>Second fvkin item</li>
-        <li>Hey this is a third item in the undordered list</li>
+    <h2>About Me</h2>
+    <p>I’m a technology enthusiast with a growing interest in software engineering, computer systems, and how mathematics can be used to solve real-world problems.
+    My academic journey is still at the early stages, but I’m already diving into several areas including:
+    <ul class="ul">
+        <li>Python programming</li>
+        <li>Web development (HTML, CSS, JavaScript)</li>
+        <li>Basic algorithms and data structures</li>
+        <li>Discrete Mathematics</li>
+        <li>Computer Architecture fundamentals</li>
     </ul>
-    <script src="script.js"></script>
+    </p>
+    <p>Beyond classwork, I enjoy experimenting with small coding projects, exploring automation, and learning how different parts of technology connect to create systems we use every day.
+    My long-term goal is to become a well-rounded developer capable of contributing to impactful software with clean design, efficient code, and user-friendly interfaces.
+    </p>
+
+    <button onClick="greetings()">Greetings</button>
+    <button onClick="counter()">Your Name</button>
+    
+    <h2>Biography</h2>
+        <p id="text">This is a brief bio of Lampard</p>
+        I was first introduced to programming after primary school when I finished doing my KCPE exams, where I discovered how satisfying it is to break down complex problems into simple, logical steps.
+        I decided to learn HTML/CSS since I was curious about how websites were made and later learnt python.
+        That curiosity eventually led me to pursue Computer Science at JKUAT. I’m particularly drawn to:
+        <ul>
+            <li>Python Data Structures and Algorithms</li>
+            <li>Python Machine Learning and AI</li>
+            <li>Web development with HTML/CSS/JS, REACT and NextJs</li>
+            <li>Python Data Science, with Pandas, NumPy and Matplotlib for visualizations</li>
+        </ul>
+        When I'm not coding, I enjoy reading psychology books, watching documentaries, dissecting movie plots, and occasionally getting lost in anime worlds.
+        I am naturally curious and love challenging myself exploring new things and topics. 
+    <h2>Contact Me</h2>
+    <p>I f you'd like to connect, collaborate or just say hi, feel free to reach out below. </p>
+    <form action="">
+    <fieldset><legend>Contact Me</legend>
+        <div class="form-group">
+            <label for="">Email</label>
+            <input type="email" id="email" name="email" placeholder="e.g. johndoe@gmail.com">
+        </div>
+        <div class="form-group">
+            <label for="">Name</label>
+            <input type="text" name="name" placeholder="e.g. John Doe">
+        </div>
+        <div class="form-group">
+            <label for="">Message</label>
+            <textarea name="message" id="" rows="3" cols="25" placeholder="Your message here..."></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Send">
+        </div>
+    </fieldset></form>
+        <script src="script.js"></script>
 </body>
 
 </html>
