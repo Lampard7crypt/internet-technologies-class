@@ -13,11 +13,11 @@
 </head>
 
 <body class="dark-mode">
-    <nav>
+    <nav class="navbar">
         <ul>
             <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li style="float:right"><button id="darkModeToggle"
                     style="padding: 14px 16px; background: none; border: none; color: white; cursor: pointer; font-family: inherit; font-size: inherit;">🌙 Dark Mode</button></li>
         </ul>
@@ -46,7 +46,7 @@
     <button onClick="greetings()">Greetings</button>
     <button onClick="counter()">Your Name</button>
     
-    <h2>Biography</h2>
+    <h2 id="about">Biography</h2>
         <p id="text">This is a brief bio of Lampard</p>
         I was first introduced to programming after primary school when I finished doing my KCPE exams, where I discovered how satisfying it is to break down complex problems into simple, logical steps.
         I decided to learn HTML/CSS since I was curious about how websites were made and later learnt python.
@@ -61,22 +61,20 @@
         I am naturally curious and love challenging myself exploring new things and topics. 
     <h2>Contact Me</h2>
     <p>I f you'd like to connect, collaborate or just say hi, feel free to reach out below. </p>
-    <form action="">
+    <form action="mailto:tk654001@gmail.com" id="contact" method="post">
     <fieldset><legend>Contact Me</legend>
         <div class="form-group">
-            <label for="">Email</label>
-            <input type="email" id="email" name="email" placeholder="e.g. johndoe@gmail.com">
+            <input type="text" id="name" name="name" placeholder="Name">
         </div>
         <div class="form-group">
-            <label for="">Name</label>
-            <input type="text" name="name" placeholder="e.g. John Doe">
+            <input type="email" id="email" name="email" placeholder="Email">
         </div>
+        
         <div class="form-group">
-            <label for="">Message</label>
-            <textarea name="message" id="" rows="3" cols="25" placeholder="Your message here..."></textarea>
+            <textarea name="message" id="message" rows="3" cols="25" placeholder="Your message here..."></textarea>
         </div>
         <div>
-            <input type="submit" value="Send">
+            <button type="submit">Send</button>
         </div>
     </fieldset></form>
         <script src="script.js"></script>
