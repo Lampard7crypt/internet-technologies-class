@@ -1,3 +1,11 @@
+// Assignment Starts Here!!!
+
+
+
+
+//Asignment Ends Here!!
+
+
 let count = 0;
 function counter() {
     let name = prompt("What is your name:");
@@ -7,6 +15,13 @@ function counter() {
 function greetings() {
     alert("Helloow, I'm Lampard");
 }
+
+
+function square(a) {
+    return a * a;
+}
+
+console.log(square(4));
 
 function toggleDarkMode() {
     const body = document.body; // Grab the whole body. 
@@ -25,32 +40,5 @@ if (document.body.classList.contains('dark-mode')) {
     document.getElementById('darkModeToggle').textContent = "☀️ Light Mode";
 }
 
-// Add event listener to the button
+// Adding event listener to the button
 document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
-
-
-/*
-function updateGreeting() {
-    const greetingElement = document.getElementById('greeting');
-    const currentHour = new Date().getHours();
-    let greetingText;
-
-    if (currentHour < 12) {
-        greetingText = "Good Morning";
-    } else if (currentHour < 18) {
-        greetingText = "Good Afternoon";
-    } else {
-        greetingText = "Good Evening";
-    }
-
-    greetingElement.textContent = greetingText;
-}
-// Run the function when the page loads
-updateGreeting();
-*/
-
-function square(a) {
-    return a * a;
-}
-
-console.log(square(4));

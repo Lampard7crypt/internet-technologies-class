@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Assignment Site</title>
+    <style>
+        form {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #ccc;
+            gap: 1rem;
+        }
+
+        form[input] {
+            display: block;
+            color: blue;
+        }
+
+        fieldset {
+            border: none;
+            display: flex;
+            flex-direction: column;
+
+            legend {
+                font-weight: bold;
+            }
+
+            label {
+                text-align: right;
+                width: 75px;
+            }
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0.75rem 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background: #9b9c97;
+            color: #333;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        #submit-btn {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            width: 100%;
+            font-size: 22px;
+            border-radius: 4px;
+            border: none;
+            background-color: #7f8cf0;
+        }
+
+        #submit-btn:hover {
+            background-color: #7483f7;
+            cursor: pointer;
+        }
+
+        .form-group {
+            margin-top: 1rem;
+        }
+
+        .form-group label {
+            flex: 0 0 150px;
+            text-align: left;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Site for Assignment</h1>
+    Hello there.....
+    <br>
+    <hr>
+    <p id="resultDisplay">Results Displayed Here</p>
+    <hr>
+    <form action="" id="contact" method="post">
+        <fieldset>
+            <legend>Contact Me</legend>
+            <div class="form-group">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label><br>
+                <input type="number" id="age" name="age" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label><br>
+                <textarea name="message" id="message" rows="3" cols="25" placeholder="Type your message here..."></textarea>
+            </div>
+
+            <div class="container">
+                <label for="pythonCheck">Python<input type="checkbox" id="pythonCheck" value="Python"><span class="checkmark"></span></label>
+                <label for="jsCheck">JavaScript<input type="checkbox" id="jsCheck" value="JavaScript"><span class="checkmark"></span></label>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit-btn">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+    <script src="assignment.js"></script>
+</body>
+
+</html>
