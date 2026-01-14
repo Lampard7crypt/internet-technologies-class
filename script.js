@@ -1,10 +1,10 @@
-let count=0;
-function counter(){
+let count = 0;
+function counter() {
     let name = prompt("What is your name:");
     document.getElementById("text").innerHTML = "Hello " + name;
 }
 
-function greetings(){
+function greetings() {
     alert("Helloow, I'm Lampard");
 }
 
@@ -48,3 +48,9 @@ function updateGreeting() {
 // Run the function when the page loads
 updateGreeting();
 */
+
+function square(a) {
+    return a * a;
+}
+
+console.log(square(4));
