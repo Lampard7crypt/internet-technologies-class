@@ -4,25 +4,24 @@ const jsCheckbox = document.getElementById('jsCheck');
 const submitButton = document.getElementById('submit-btn');
 const resultText = document.getElementById('resultDisplay');
 
-submitButton.addEventListener('click', function(e) {
+submitButton.addEventListener('click', function (e) {
     e.preventDefault(); // stop form submission
     // existing checkbox logic...
 });
 
 // 2. Add an event listener to the button
-submitButton.addEventListener('click', function() {
+submitButton.addEventListener('click', function () {
 
-    // 3. Check the state of the checkboxes using the .checked property
     const isPythonChecked = pythonCheckbox.checked;
     const isJsChecked = jsCheckbox.checked;
 
-    // 4. Logic to determine what to print
+
     if (isPythonChecked && isJsChecked) {
-        resultText.textContent = "You are a Full Stack Wizard! (Python & JS)";
+        resultText.textContent = "So you know both JS and Python! Nice!!!";
     } else if (isPythonChecked) {
-        resultText.textContent = "Data Science or Backend? Nice Python skills!";
+        resultText.textContent = "Python? Very powerful language!!";
     } else if (isJsChecked) {
-        resultText.textContent = "The language of the web! Great JavaScript choice.";
+        resultText.textContent = "JS, one of the best if not the best scripting languages";
     } else {
         resultText.textContent = "Please select at least one skill.";
     }
