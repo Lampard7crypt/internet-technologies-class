@@ -6,7 +6,7 @@ const resultText = document.getElementById('resultDisplay');
 
 submitButton.addEventListener('click', function (e) {
     e.preventDefault(); // stop form submission
-    // existing checkbox logic...
+    // existing checkbox logic.../
 });
 
 // 2. Add an event listener to the button
