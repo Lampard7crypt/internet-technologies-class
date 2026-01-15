@@ -1,11 +1,3 @@
-// Assignment Starts Here!!!
-
-
-
-
-//Asignment Ends Here!!
-
-
 let count = 0;
 function counter() {
     let name = prompt("What is your name:");
